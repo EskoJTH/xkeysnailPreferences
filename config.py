@@ -25,24 +25,41 @@ from xkeysnail.transform import *
     # To use this example, you can't remap capslock with define_modmap.
 #)
 
+#SPACE_MARK = False
+#_mark_set = True
+
+# def mark_switch():
+#     def mark_switch():
+#         global _mark_set
+#         _mark_set = not _mark_set
+#         print("asd")
+#         print(_mark_set)
+#         print("asd")
+#         return set_mark(_mark_set)
+#     return mark_switch()
 
 
 # Keybindings for Firefox/Chrome
-define_keymap(re.compile("Firefox|Google-chrome|Slack|rocketchat-desktop|libreoffice"), {
+define_keymap(re.compile("Arduino|Firefox|Google-chrome|Slack|rocketchat-desktop|libreoffice|Riot|Postman|chromium|Spectral"), {
 
 
     
     #Ctrl+Alt+j/k to switch next/previous tab
-    K("C-M-j"): K("C-TAB"),
-    K("C-M-k"): K("C-Shift-TAB"),
+    K("M-KEY_102ND"): K("C-home"),
+    K("M-LShift-KEY_102ND"): K("C-end"),
+    #K("M-S-MUHENKAN"): K("C-end"),
+    K("M-p"): K("C-page_up"),
+    K("M-n"): K("C-page_down"),
      #Type C-j to focus to the content
     K("C-l"): K("C-f6"),
      #very naive "Edit in editor" feature (just an example)
     #K("C-M-e"): [K("C-a"), K("C-c"), launch(["emacs"]), sleep(0.5), K("C-v")],
     #nowork
 
-    K("M-p"): K("M-left"),
-    K("M-n"): K("M-right"),
+    K("M-Shift-p"): K("M-left"),
+    K("M-Shift-n"): K("M-right"),
+
+    K("M-z"): K("C-f4"),
     
         
     K("C-b"): with_mark(K("left")),
@@ -53,7 +70,7 @@ define_keymap(re.compile("Firefox|Google-chrome|Slack|rocketchat-desktop|libreof
     # Forward/Backward word
     K("M-b"): with_mark(K("C-left")),
     K("M-f"): with_mark(K("C-right")),
-    # Beginning/End of line
+    # Beginning/End of lineblood flows bet
     K("C-a"): with_mark(K("home")),
     K("C-e"): with_mark(K("end")),
     # Page up/down
