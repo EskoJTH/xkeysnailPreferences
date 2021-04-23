@@ -40,7 +40,7 @@ from xkeysnail.transform import *
 
 
 # Keybindings for Firefox/Chrome
-define_keymap(re.compile("Arduino|Firefox|Google-chrome|Slack|rocketchat-desktop|libreoffice|Riot|Postman|chromium|Spectral"), {
+define_keymap(re.compile("Arduino|Firefox|Google-chrome|Slack|rocketchat-desktop|libreoffice|Riot|Postman|chromium|Spectral|Telegram|OpenSCAD"), {
 
 
     
