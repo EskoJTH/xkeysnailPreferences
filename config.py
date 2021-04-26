@@ -56,8 +56,11 @@ define_keymap(re.compile("Arduino|Firefox|Google-chrome|Slack|rocketchat-desktop
     #K("C-M-e"): [K("C-a"), K("C-c"), launch(["emacs"]), sleep(0.5), K("C-v")],
     #nowork
 
-    K("M-Shift-p"): K("M-left"),
-    K("M-Shift-n"): K("M-right"),
+    K("M-Shift-p"): K("C-Shift-page_up"),
+    K("M-Shift-n"): K("C-Shift-page_down"),
+
+    K("M-C-p"): K("M-left"),
+    K("M-C-n"): K("M-right"),
 
     K("M-z"): K("C-f4"),
     
