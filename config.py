@@ -39,8 +39,26 @@ from xkeysnail.transform import *
 #     return mark_switch()
 
 
+define_keymap(re.compile("jetbrains-idea"), {
+    # K("M-KEY_102ND"): K("C-home"),
+    # K("M-LShift-KEY_102ND"): K("C-end"),
+    K("C-a"): with_mark(K("home")),
+    K("C-e"): with_mark(K("end")),
+    K("C-b"): with_mark(K("left")),
+    K("C-f"): with_mark(K("right")),
+    K("C-p"): with_mark(K("up")),
+    K("C-n"): with_mark(K("down")),
+    K("C-d"): [K("delete"), set_mark(False)],
+    K("M-d"): [K("C-delete"), set_mark(False)]
+    
+    # K("C-h"): with_mark(K("backspace"))
+    # K("M-p"): K("C-page_up"),
+    # K("M-n"): K("C-page_down"),
+})
+
+
 # Keybindings for Firefox/Chrome
-define_keymap(re.compile("Arduino|Firefox|Google-chrome|Slack|rocketchat-desktop|libreoffice|Riot|Postman|chromium|Spectral|Telegram|OpenSCAD"), {
+define_keymap(re.compile("Arduino|Firefox|Google-chrome|Slack|rocketchat-desktop|libreoffice|Riot|Postman|chromium|Spectral|Telegram|OpenSCAD|jetbrains-idea"), {
 
 
     
