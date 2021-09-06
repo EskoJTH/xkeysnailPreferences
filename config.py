@@ -59,7 +59,7 @@ define_keymap(re.compile("jetbrains-idea"), {
 
 
 # Keybindings for Firefox/Chrome
-define_keymap(re.compile("Arduino|Firefox|Google-chrome|Slack|rocketchat-desktop|libreoffice|Riot|Postman|chromium|Spectral|Telegram|OpenSCAD"), {
+define_keymap(re.compile("Arduino|Firefox|Google-chrome|Slack|rocketchat-desktop|libreoffice|Riot|Postman|chromium|Spectral|Telegram|OpenSCAD|Zoom"), {
 
     #Ctrl+Alt+j/k to switch next/previous tab
     K("LAlt-KEY_102ND"): K("C-home"),
